@@ -215,18 +215,26 @@ Belgium</p></a>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-analytics.js"></script>
+
     <script>
         // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
         var firebaseConfig = {
             apiKey: "AIzaSyARzRVuM-TXfaEhX58Yt-vED-7EFGx3p6w",
             authDomain: "allround-repair.firebaseapp.com",
             projectId: "allround-repair",
             storageBucket: "allround-repair.appspot.com",
             messagingSenderId: "531407346048",
-            appId: "1:531407346048:web:846f28b2441082561e0965"
+            appId: "1:531407346048:web:846f28b2441082561e0965",
+            measurementId: "G-D3NP8W4TJ6"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
 </body>
 
